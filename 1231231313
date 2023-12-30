@@ -7,7 +7,7 @@
     local AimlockPage = MainUI.AddPage("Aimlock")
     local TrollPage = MainUI.AddPage("Troll")
     local TogglePage = MainUI.AddPage("Song")
-    -- // TOGGLE! (DONT FUCK UP MY FUCKING TOGGLE )
+    -- // TOGGLE! (Niggers kys )
 
     local Mouse = game.Players.LocalPlayer:GetMouse()
     local Closed = true
