@@ -438,7 +438,7 @@ getgenv().Kick = false
     game:GetService("RunService").heartbeat:Connect(function()
     if getgenv().Punch == true then 
     local Vel = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
-    game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector.X*350,350,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector.Z*350)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector.X*340,340,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector.Z*340)
     game:GetService("RunService").RenderStepped:Wait()
     game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vel
     end 
@@ -7012,7 +7012,7 @@ end)
             Ringtone(1845383161)
     end)
 
-    local SecondButton = TogglePage.AddButton("Jesus Amen", function()
+    local SecondButton = TogglePage.AddButton("jaw", function()
         function Ringtone(ID)
             --//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\-- Save Tool
             local Tool = nil
@@ -7107,7 +7107,7 @@ end)
             -- Call()
             -- ReCall()
         
-            Ringtone(1845383119)
+            Ringtone(7011979447)
     end)
 
     local SecondButton = TogglePage.AddButton("Meme", function()
