@@ -438,7 +438,7 @@ getgenv().Kick = false
     game:GetService("RunService").heartbeat:Connect(function()
     if getgenv().Punch == true then 
     local Vel = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
-    game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector.X*260,260,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector.Z*260)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector.X*350,350,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector.Z*350)
     game:GetService("RunService").RenderStepped:Wait()
     game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vel
     end 
@@ -464,8 +464,8 @@ getgenv().Kick = false
     getgenv().Punch = false
     end)
 
-    getgenv().abc = 250
-    getgenv().dc = 300
+    getgenv().abc = 300
+    getgenv().dc = 370
  
     game:GetService("RunService").heartbeat:Connect(function()
         for _, v in next, game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):GetPlayingAnimationTracks() do
