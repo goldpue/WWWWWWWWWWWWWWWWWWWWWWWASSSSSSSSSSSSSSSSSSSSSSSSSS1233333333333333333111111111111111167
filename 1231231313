@@ -7,7 +7,7 @@
     local AimlockPage = MainUI.AddPage("Aimlock")
     local TrollPage = MainUI.AddPage("Troll")
     local TogglePage = MainUI.AddPage("Song")
-    -- // TOGGLE! (Niggers kys )
+    -- // TOGGLE! (DONT FUCK UP MY FUCKING TOGGLE )
 
     local Mouse = game.Players.LocalPlayer:GetMouse()
     local Closed = true
@@ -236,32 +236,18 @@ function Ringtone(ID)
     -- ReCall()
 
 
-      tool = Instance.new("Tool")
-	tool.RequiresHandle = false
-	tool.Name = "Speed"
-	tool.Activated:connect(function()
-		local A_1 = game.Players.LocalPlayer.Character.BodyEffects.Movement:FindFirstChild("SuperSpeed")
-		local A_2 = game.Players.LocalPlayer.Character.BodyEffects.Movement:FindFirstChild("HulkJump")
-		if A_1 then
-Ringtone(157325701)
-			game:GetService"Players".LocalPlayer.Character.BodyEffects.Movement.SuperSpeed:Destroy()
-wait(1.7)
-Ringtone(0)
-		else
-Ringtone(2674547670)
-
-			local OD2 = Instance.new("IntValue",game:GetService"Players".LocalPlayer.Character.BodyEffects.Movement)
-			OD2.Name = "SuperSpeed"
-wait(1.7)
-Ringtone(0)
-		end
-		if A_2 then
-			game:GetService"Players".LocalPlayer.Character.BodyEffects.Movement.HulkJump:Destroy()
-		else
-game:GetService"Players".LocalPlayer.Character.BodyEffects.Movement.HulkJump:Destroy()
-		end
-	end)
-	tool.Parent = game.Players.LocalPlayer.Backpack
+    local LocalPlayer = game:GetService("Players").LocalPlayer
+    local Tool = Instance.new("Tool",LocalPlayer.Backpack)
+    local Mouse = LocalPlayer:GetMouse()
+    local OriginalKeyUpValue = 0
+    Tool.RequiresHandle = false 
+    Tool.Name = "Rage"
+    Tool.Activated:Connect(function()
+    Ringtone(4968749619)
+    AnimPlay(2788838708)
+    wait(3.7)
+    AnimStop(2788838708)
+    end)
 
 function Ringtone(ID)
     --//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\-- Save Tool
@@ -390,7 +376,7 @@ function Ringtone(ID)
     game:GetService("RunService").heartbeat:Connect(function()
     if getgenv().Uppercut == true then 
         local Vel = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
-        game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector.X*300,300,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector.Z*300)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector.X*370,370,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector.Z*370)
         game:GetService("RunService").RenderStepped:Wait()
         game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vel
     end 
@@ -452,7 +438,7 @@ getgenv().Kick = false
     game:GetService("RunService").heartbeat:Connect(function()
     if getgenv().Punch == true then 
     local Vel = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
-    game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector.X*350,350,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector.Z*350)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector.X*260,260,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector.Z*260)
     game:GetService("RunService").RenderStepped:Wait()
     game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vel
     end 
